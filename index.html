@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">blueBox</div>
+        <div class="profile">
+            <img src="profile.jpg" alt="User">
+            <span>Angelina Doe</span>
+            <p>Project Manager</p>
+        </div>
+        <nav>
+            <ul>
+                <li class="active"><i class="material-icons">dashboard</i> Dashboard</li>
+                <li><i class="material-icons">palette</i> UI Elements</li>
+                <li><i class="material-icons">layers</i> Components</li>
+                <li><i class="material-icons">description</i> Forms Stuff</li>
+                <li><i class="material-icons">table_chart</i> Data Table</li>
+                <li><i class="material-icons">insert_emoticon</i> Icons</li>
+                <li><i class="material-icons">insert_drive_file</i> Sample Page</li>
+                <li><i class="material-icons">more_horiz</i>Extra</li>
+            </ul>
+        </nav>
+        <button class="add-project">Add Project</button>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+        <nav class="navbar">
+            <input type="text" class="search-box" placeholder="Search Project">
+            <div class="profile">
+                <img src="profile.jpg" alt="User">
+                <span>Angelina Doe</span>
+            </div>
+        </nav>
+
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="cards">
+                <div class="card purple">
+                    <h3>Stock Total</h3>
+                    <p>$150000</p>
+                    <small>Increased by 60%</small>
+                </div>
+                <div class="card blue">
+                    <h3>Total Profit</h3>
+                    <p>$25000</p>
+                    <small>Increased by 30%</small>
+                </div>
+                <div class="card orange">
+                    <h3>Unique Visitors</h3>
+                    <p>250000</p>
+                    <small>Increased by 80%</small>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <h3>Standard Table Design</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>User Type</th>
+                            <th>Joined</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTable">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
